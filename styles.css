@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "BrutalType-Bold";
+    src: url("font/BrutalType-Bold.eot");
+    src: url("font/BrutalType-Bold.eot?#iefix")format("embedded-opentype"),
+	    url("font/BrutalType-Bold.woff")format("woff"),
+	    url("font/BrutalType-Bold.woff2")format("woff2"),
+	    url("font/BrutalType-Bold.ttf")format("truetype"),
+	    url("font/BrutalType-Bold.svg#BrutalType-Bold")format("svg");
+	font-weight:normal;
+	font-style:normal;
+	font-display:swap;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='353' height='42.4' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='8.7' stroke-opacity='0.63'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.container {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    height: 100vh;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.header {
+    font-family: 'BrutalType-Bold', cursive;
+    margin-top: 10vh;
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin-top: -20px;
+    }
+}
+
+.hero-intro {
+    position: absolute;
+    margin-top: 35vh;
+}
+
+.typewriter h2 {
+    overflow: hidden;
+    border-right: .15em solid #56376b; 
+    padding-right: 10px;
+    white-space: nowrap; 
+    letter-spacing: 0em;
+    animation: 
+        typing 1s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #56376b; }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100vw;
+        padding: 15px;
+    }
+
+    .header {
+        font-family: 'BrutalType-Bold', cursive;
+        margin-top: 3vh;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: -20px;
+        }
+    }
+
+    .hero-intro {
+        position: absolute;
+        margin-top: 20vh;
+    }
+}
