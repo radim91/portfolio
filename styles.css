@@ -38,6 +38,7 @@ body {
     color: #ffffff;
     background-color: #000000;
     font-size: 1.4rem;
+    box-sizing: border-box;
 }
 
 .bold {
@@ -93,16 +94,25 @@ h3 {
 .mb-5 {
     margin-bottom: 50px;
 }
+
+.mb-250 {
+    margin-bottom: 250px;
+}
+
+me-1 {
+    margin-right: 10px;
+}
+
 .me-2 {
     margin-right: 20px;
 }
 
-.w-33 {
-    width: 33.33%;
+.w-30 {
+    width: 30%;
 }
 
-.w-50 {
-    width: 50%;
+.w-50vh {
+    width: 50vw;
 }
 
 .w-75 {
@@ -120,8 +130,54 @@ h3 {
     transform: rotate(-45deg);
 }
 
+#work {
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
 .work-header {
     width: 100%;
+}
+
+
+.ping-stick {
+    position: absolute;
+    right: -40px;
+    transform: rotate(-160deg);
+    opacity: 0;  
+}
+
+.pong-stick {
+    position: absolute;
+    left: -140px;
+    margin-top: -20px;
+    transform: rotate(45deg);
+    opacity: 0;  
+
+    img {
+        width: 75%;
+    }
+}
+
+#work-link-svet-prace {
+    display: none;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 20px;
+}
+
+#work-link-ahoy {
+    display: none;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 20px;
+}
+
+#work-link-ideabooks {
+    display: none;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 20px;
 }
 
 @media only screen and (max-width: 600px) {
