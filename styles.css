@@ -40,10 +40,18 @@ body {
     font-size: 1.4rem;
 }
 
+.bold {
+    font-family: 'BrutalType-Bold', cursive;
+}
+
 .container {
     display: flex;
     width: 80vw;
     margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.hero {
     height: 100vh;
 }
 
@@ -78,8 +86,31 @@ h3 {
     right: 25vh;
 }
 
-#work {
-    flex-direction: column;
+.mt-5 {
+    margin-top: 50px;
+}
+
+.mb-5 {
+    margin-bottom: 50px;
+}
+.me-2 {
+    margin-right: 20px;
+}
+
+.w-33 {
+    width: 33.33%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-100 {
+    width: 100%;
 }
 
 .link-stick {
@@ -87,6 +118,10 @@ h3 {
     top: -7px;
     width: 20px;
     transform: rotate(-45deg);
+}
+
+.work-header {
+    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
