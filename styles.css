@@ -47,7 +47,7 @@ body {
 
 .container {
     display: flex;
-    width: 80vw;
+    width: 75vw;
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -144,7 +144,11 @@ me-1 {
     position: absolute;
     right: -40px;
     transform: rotate(-160deg);
-    opacity: 0;  
+    opacity: 0;
+
+    img {
+        width: 100%;
+    }
 }
 
 .pong-stick {
@@ -183,7 +187,7 @@ me-1 {
 @media only screen and (max-width: 600px) {
 
     .container {
-        width: 100vw;
+        width: 80vw;
         padding: 25px;
     }
 
@@ -214,5 +218,21 @@ me-1 {
         img {
             width: 100px;
         }
+    }
+
+    .w-30 {
+        width: 80%;
+    }
+    .work-header {
+        width: 80%;
+    }
+    .ping-stick {
+        position: absolute;
+        right: -40px;
+        transform: rotate(-160deg);
+        opacity: 0;  
+    }
+    .ping-stick img {
+        width: 50% !important;
     }
 }
